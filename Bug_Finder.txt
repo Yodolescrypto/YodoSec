@@ -1,0 +1,18 @@
+To Script:
+    * Everything
+    * .json parameter file
+
+
+
+Testing Process:
+
+nikto -h <host>
+
+msfconsole && load wmap && wmap_sites -a <host> && wmap_targets -d 0 && wmap_run -t && wmap_run -e (grosso merdo)
+
+wapiti -u <URL>
+
+sqlmap -u <URL> --crawl 10 --forms
+
+theo --account-pk <PK> --rpc-http <rpc_URL> --contract <ADDRESS>
+
